@@ -21,7 +21,8 @@ python extract_data.py
 ### Single
 
 ```
-Rscript 
+Rscript alg-create.R 
+Rscript alg-plot.R
 ```
 
 ### Merge

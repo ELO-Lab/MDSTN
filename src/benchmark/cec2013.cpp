@@ -269,25 +269,25 @@ void CEC2013::load_goptima()
 	} 
 	std::string filename;
 	if (nfunc_ == 1) {
-		filename = "benchmark/data/F1_opt.dat";
+		filename = "src/benchmark/data/F1_opt.dat";
 	} else if (nfunc_ == 2) {
-		filename = "benchmark/data/F2_opt.dat";
+		filename = "src/benchmark/data/F2_opt.dat";
 	} else if (nfunc_ == 3) {
-		filename = "benchmark/data/F3_opt.dat";
+		filename = "src/benchmark/data/F3_opt.dat";
 	} else if (nfunc_ == 4) {
-		filename = "benchmark/data/F4_opt.dat";
+		filename = "src/benchmark/data/F4_opt.dat";
 	} else if (nfunc_ == 5) {
-		filename = "benchmark/data/F5_opt.dat";
+		filename = "src/benchmark/data/F5_opt.dat";
 	} else if (nfunc_ == 6) {
-		filename = "benchmark/data/F6_2D_opt.dat";
+		filename = "src/benchmark/data/F6_2D_opt.dat";
 	} else if (nfunc_ == 8) {
-		filename = "benchmark/data/F6_3D_opt.dat";
+		filename = "src/benchmark/data/F6_3D_opt.dat";
 	} else if (nfunc_ == 7) {
-		filename = "benchmark/data/F7_2D_opt.dat";
+		filename = "src/benchmark/data/F7_2D_opt.dat";
 	} else if (nfunc_ == 9) {
-		filename = "benchmark/data/F7_3D_opt.dat";
+		filename = "src/benchmark/data/F7_3D_opt.dat";
 	} else if (nfunc_ == 10) {
-		filename = "benchmark/data/F8_2D_opt.dat";
+		filename = "src/benchmark/data/F8_2D_opt.dat";
 	}
 	load_goptima(filename);
 }

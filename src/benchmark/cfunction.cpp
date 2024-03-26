@@ -321,9 +321,9 @@ CF1::CF1(const int dim) : CFunction(dim, 6)
 	if (dimension_ == 2 || dimension_ == 3 || dimension_ == 5 
 			|| dimension_ == 10 || dimension_ == 20 ) {
 		std::string fname;
-		fname = "benchmark/data/CF1_M_D" + number_to_string(dim) + "_opt.dat";
+		fname = "src/benchmark/data/CF1_M_D" + number_to_string(dim) + "_opt.dat";
 		load_optima(fname);
-//		fname = "benchmark/data/CF3_M_D" + number_to_string(dim) + ".dat";
+//		fname = "src/benchmark/data/CF3_M_D" + number_to_string(dim) + ".dat";
 //		load_rotmat(fname);
 	} else { 
 		init_optima_rand();
@@ -367,7 +367,7 @@ CF2::CF2(const int dim) : CFunction(dim, 8)
 	if (dimension_ == 2 || dimension_ == 3 || dimension_ == 5 
 			|| dimension_ == 10 || dimension_ == 20 ) {
 		std::string fname;
-		fname = "benchmark/data/CF2_M_D" + number_to_string(dim) + "_opt.dat";
+		fname = "src/benchmark/data/CF2_M_D" + number_to_string(dim) + "_opt.dat";
 		load_optima(fname);
 	} else { 
 		init_optima_rand();
@@ -415,9 +415,9 @@ CF3::CF3(const int dim) : CFunction(dim, 6)
 	if (dimension_ == 2 || dimension_ == 3 || dimension_ == 5 
 			|| dimension_ == 10 || dimension_ == 20 ) {
 		std::string fname;
-		fname = "benchmark/data/CF3_M_D" + number_to_string(dim) + "_opt.dat";
+		fname = "src/benchmark/data/CF3_M_D" + number_to_string(dim) + "_opt.dat";
 		load_optima(fname);
-		fname = "benchmark/data/CF3_M_D" + number_to_string(dim) + ".dat";
+		fname = "src/benchmark/data/CF3_M_D" + number_to_string(dim) + ".dat";
 		load_rotmat(fname);
 	} else { 
 		init_optima_rand();
@@ -469,9 +469,9 @@ CF4::CF4(const int dim) : CFunction(dim, 8)
 	if (dimension_ == 2 || dimension_ == 3 || dimension_ == 5 
 			|| dimension_ == 10 || dimension_ == 20) {
 		std::string fname;
-		fname = "benchmark/data/CF4_M_D" + number_to_string(dim) + "_opt.dat";
+		fname = "src/benchmark/data/CF4_M_D" + number_to_string(dim) + "_opt.dat";
 		load_optima(fname);
-		fname = "benchmark/data/CF4_M_D" + number_to_string(dim) + ".dat";
+		fname = "src/benchmark/data/CF4_M_D" + number_to_string(dim) + ".dat";
 		load_rotmat(fname);
 	} else {
 		init_optima_rand();
@@ -493,7 +493,7 @@ tFitness CF4::evaluate(const double *x)
 }
 
 /******************************************************************************
- * Basic Benchmark functions 
+ * Basic src/benchmark functions 
  *****************************************************************************/
 /******************************************************************************
  * F1: Five-Uneven-Peak Trap 
