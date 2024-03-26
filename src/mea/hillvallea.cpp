@@ -13,7 +13,6 @@ github.com/SCMaree/HillVallEA
 #include "population.hpp"
 #include "mathfunctions.hpp"
 #include "fitness.h"
-#include "hgml.hpp"
 
 namespace hillvallea
 {

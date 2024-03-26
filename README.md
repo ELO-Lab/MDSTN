@@ -12,6 +12,12 @@ make
 
 ## Plot MDSTNs
 
+### Data
+
+```
+python extract_data.py
+```
+
 ### Single
 
 ```
