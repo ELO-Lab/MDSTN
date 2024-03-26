@@ -15,8 +15,8 @@ ngopts = [2, 5, 1, 4, 2, 18, 36, 81, 216, 12,
 opt_files = ["F1_opt.dat", "F2_opt.dat", "F3_opt.dat", "F4_opt.dat", "F5_opt.dat", "F6_2D_opt.dat", "F7_2D_opt.dat", "F6_3D_opt.dat", "F7_3D_opt.dat", "F8_2D_opt.dat",
              "CF1_M_D2_opt.dat", "CF2_M_D2_opt.dat", "CF3_M_D2_opt.dat", "CF3_M_D3_opt.dat", "CF4_M_D3_opt.dat", "CF3_M_D5_opt.dat", "CF4_M_D5_opt.dat", "CF3_M_D10_opt.dat", "CF4_M_D10_opt.dat", "CF4_M_D20_opt.dat"]
 # ========================================================== #
-algos = {"0_0":"HVAM", "0_resi":"ReAM", "5_0":"HVES", "5_resi":"ReES"}
-prob_ids = [7]
+algos = {"0_0":"HVAM", "0_resi":"URAM", "5_0":"HVES", "5_resi":"URES"}
+prob_ids = range(20)
 folder_in = "results"
 folder_out = "cec2013"
 # ========================================================== #
