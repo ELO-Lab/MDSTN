@@ -17,7 +17,7 @@ opt_files = ["F1_opt.dat", "F2_opt.dat", "F3_opt.dat", "F4_opt.dat", "F5_opt.dat
 # ========================================================== #
 algos = {"0_0":"HVAM", "0_resi":"URAM", "5_0":"HVES", "5_resi":"URES"}
 prob_ids = range(20)
-folder_in = "results"
+folder_in = "../../results"
 folder_out = "cec2013"
 # ========================================================== #
 

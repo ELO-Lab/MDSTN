@@ -26,14 +26,14 @@ results
     └─── p1
 ```
 
-There are two field which should be noticed such as `algo` and `prob_ids`.
+Data for plotting MDSTN can be obtained by 
+```
+python src/mdstn/extract_data.py
+```
+
+There are two field which should be noticed such as `algo` and `prob_ids`:
 - `algo` is a dictionary whose keys are name of folder containing results of an algorithm and values are its name.
 - `prob_ids` is a list of indices of problems solved by the algorithm.
-
-After filling these two field, the data for plotting MDSTN can be obtained by 
-```
-python extract_data.py
-```
 
 ### Single
 
