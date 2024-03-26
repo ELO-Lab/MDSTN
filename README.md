@@ -3,11 +3,25 @@
 
 Bao Thai Tran, Ngoc Hoang Luong
 
-## Requirements
-
 ## Run MEAs
 
+```
+make
+./run_experiments
+```
+
 ## Plot MDSTNs
+
+### Single
+
+```
+Rscript 
+```
+
+### Merge
+```
+Rscript 
+```
 
 ## Acknowledge
 
