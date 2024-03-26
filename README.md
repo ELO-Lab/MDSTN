@@ -31,7 +31,7 @@ Data for plotting MDSTN can be obtained by
 python src/mdstn/extract_data.py
 ```
 
-There are two field which should be noticed such as `algo` and `prob_ids`:
+There are two variables in file `extract_data.py` which should be noticed such as `algo` and `prob_ids`:
 - `algo` is a dictionary whose keys are name of folder containing results of an algorithm and values are its name.
 - `prob_ids` is a list of indices of problems solved by the algorithm.
 
