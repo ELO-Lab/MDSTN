@@ -14,7 +14,7 @@ HVEA_DEP_FILES := $(patsubst $(HVEA_DIR)/%.cpp,$(HVEA_DIR)/%.d,$(HVEA_SRC_FILES)
 all: run_experiments
 
 run_experiments: $(HVEA_OBJ_FILES) $(CEC_OBJ_FILES)
-	$(CC) $(CFLAGS) -o $@ example_CEC2013_benchmark.o $(HVEA_OBJ_FILES) $(CEC_OBJ_FILES)
+	$(CC) $(CFLAGS) -o $@ run_experiments.o $(HVEA_OBJ_FILES) $(CEC_OBJ_FILES)
 
 %.o: %.cpp
 	$(CC) $(CFLAGS) -c -o $@ $<
