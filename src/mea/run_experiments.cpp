@@ -68,7 +68,12 @@ void run_CEC2013_niching_problem(int core_search_alg, int cluster_alg, int probl
     //-------------------------------------------------------
     int random_seed = 23000 + run;
 
-    hillvallea::hillvallea_t hillvallea(fitness_function, (int) fitness_function->number_of_parameters, lower_range_bounds, upper_range_bounds, fitness_function->maximum_number_of_evaluations, random_seed);
+    hillvallea::hillvallea_t hillvallea(fitness_function, 
+      (int) fitness_function->number_of_parameters, 
+      lower_range_bounds, 
+      upper_range_bounds, 
+      fitness_function->maximum_number_of_evaluations, 
+      random_seed);
     hillvallea.local_optimizer_index = core_search_alg;
     hillvallea.cluster_alg = cluster_alg;
     

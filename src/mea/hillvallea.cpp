@@ -87,7 +87,7 @@ namespace hillvallea
     this->vtr = 0;
     this->use_vtr = false;
     this->random_seed = random_seed;
-    this->write_generational_solutions = false;
+    this->write_generational_solutions = true;
     this->write_generational_statistics = false;
     this->write_directory = "";
     this->file_appendix = "";
@@ -589,15 +589,15 @@ namespace hillvallea
       }
     }
 
-    if (write_generational_statistics) {
-      write_statistics_line_population(*pop, local_optimizers, elitist_archive);
-    }
+    // if (write_generational_statistics) {
+    //   write_statistics_line_population(*pop, local_optimizers, elitist_archive);
+    // }
 
-    if (write_generational_solutions)
-    {
-      write_population_file(pop, local_optimizers);
-      write_selection_file(selection, local_optimizers);
-    }
+    // if (write_generational_solutions)
+    // {
+    //   write_population_file(pop, local_optimizers);
+    //   write_selection_file(selection, local_optimizers);
+    // }
 
   }
 
@@ -803,16 +803,16 @@ namespace hillvallea
             int local_number_of_evaluations = (int)local_optimizers[i]->sample_new_population((size_t) current_cluster_size);
             number_of_evaluations += local_number_of_evaluations;
 
-            if (write_generational_solutions) {
-              write_cluster_population(number_of_generations, i, local_optimizers[i]->number_of_generations, local_optimizers[i]->pop);
-            }
+            //if (write_generational_solutions) {
+            //  write_cluster_population(number_of_generations, i, local_optimizers[i]->number_of_generations, local_optimizers[i]->pop);
+            //}
 
             local_optimizers[i]->pop->truncation_percentage(*local_optimizers[i]->pop, local_optimizers[i]->selection_fraction);
             local_optimizers[i]->average_fitness_history.push_back(local_optimizers[i]->pop->average_fitness());
 
-            if (write_generational_statistics) {
-              write_statistics_line_cluster(*local_optimizers[i]->pop, (int) i, local_optimizers[i]->number_of_generations, local_optimizers, elitist_archive);
-            }
+            //if (write_generational_statistics) {
+            //  write_statistics_line_cluster(*local_optimizers[i]->pop, (int) i, local_optimizers[i]->number_of_generations, local_optimizers, elitist_archive);
+            //}
           }
         }
       }

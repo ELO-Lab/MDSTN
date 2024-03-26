@@ -32,7 +32,7 @@ for prob_id in prob_ids:
         os.makedirs(f"{folder_out}/p{prob_id}")
 
     #1. Find FP and the optimal solution based on CEC2013 benchmark data
-    gopts = [j.strip().split() for j in open(f"../[02]_data/cec2013_niching_benchmark/data/{opt_files[prob_id-1]}").readlines()]
+    gopts = [j.strip().split() for j in open(f"../benchmark/data/{opt_files[prob_id-1]}").readlines()]
     c_gopts = np.array([[float(i) for i in opt] for opt in gopts])
 
     ## Find the minimum difference between all dimensions
