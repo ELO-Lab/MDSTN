@@ -19,10 +19,9 @@ The directory structure of results after performing experiments should be:
 results
 └─── 0_0
 │   └─── p1
-│   	└─── run0
-│			│    population00000_elites.dat
-│			│    ...
-│       
+│       └─── run0
+│           │    population00000_elites.dat
+│           │    ...
 └─── 0_1
     └─── p1
 ```
