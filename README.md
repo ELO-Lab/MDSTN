@@ -15,12 +15,17 @@ make
 ### Data
 
 The directory structure of results after performing experiments should be:
-results/
-	- 0_0/
-		- p1/
-			- run0/
-				- population00000_elites.dat
-				...
+```
+results
+└─── 0_0
+│   └─── p1
+│   	└─── run0
+│			│    population00000_elites.dat
+│			│    ...
+│       
+└─── 0_1
+    └─── p1
+```
 
 There are two field which should be noticed such as `algo` and `prob_ids`.
 - `algo` is a dictionary whose keys are name of folder containing results of an algorithm and values are its name.
