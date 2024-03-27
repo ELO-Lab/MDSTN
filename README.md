@@ -4,7 +4,6 @@
 Bao Thai Tran, Ngoc Hoang Luong
 
 ## Run MEAs
-
 ```
 make
 ./run_experiments
@@ -13,7 +12,6 @@ make
 ## Plot MDSTNs
 
 ### Data
-
 The directory structure of results after performing experiments should be:
 ```
 results
@@ -39,12 +37,23 @@ There are two variables in file `extract_data.py` which should be noticed such a
 
 ```
 Rscript alg-create.R 
+```
+
+```
 Rscript alg-plot.R
 ```
 
 ### Merge
 ```
-Rscript 
+Rscript merged-create.R
+```
+
+```
+Rscript merged-plot.R
+```
+
+```
+Rscript merged-plot-gif.R
 ```
 
 ## Acknowledge
