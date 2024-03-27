@@ -61,7 +61,7 @@ Plot an merging MDSTN for multiple algorithms by
 Rscript merged-plot.R <path to folder containing .RData>
 ```
 
-Plot an merging MDSTN for multiple algorithms by
+Plot an dynamic merging MDSTN for multiple algorithms by
 ```
 Rscript merged-plot-gif.R <path to folder containing .RData>
 ```
