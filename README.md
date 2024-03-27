@@ -18,11 +18,16 @@ results
 └─── 0_0
 │   └─── p1
 │       └─── run0
-│           │    population00000_elites.dat
+│           │    population00001_elites.dat
 │           │    ...
 └─── 0_1
     └─── p1
 ```
+where,
+- `0_0` contains results of algorithm `0_0`.
+- `p_1` is the problem 1 in cec2013 benchmark.
+- `run0` is a run for solving the problem.
+- `population00001_elites.dat` contains potential solutions found by the algorithm in the iteration 1.
 
 Data for plotting MDSTN can be obtained by 
 ```
@@ -34,7 +39,6 @@ There are two variables in file `extract_data.py` which should be noticed such a
 - `prob_ids` is a list of indices of problems solved by the algorithm.
 
 ### Single
-
 ```
 Rscript alg-create.R 
 ```
