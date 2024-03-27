@@ -33,31 +33,37 @@ Data for plotting MDSTN can be obtained by
 ```
 python src/mdstn/extract_data.py
 ```
-
 There are two variables in file `extract_data.py` which should be noticed such as `algo` and `prob_ids`:
 - `algo` is a dictionary whose keys are name of folder containing results of an algorithm and values are its name.
 - `prob_ids` is a list of indices of problems solved by the algorithm.
 
+After extracting, multiple files `algo_prob_dims.txt` will be placed in the folder `cec2013`.
+
 ### Single
+Convert to an appropriate extension `*.RData` by
 ```
-Rscript alg-create.R 
+Rscript alg-create.R <path to folder containing .txt> <number of considered runs>
 ```
 
+Plot an MDSTN for a single algorithm by
 ```
-Rscript alg-plot.R
+Rscript alg-plot.R <path to folder containing .RData> <scale factor>
 ```
 
 ### Merge
+Combine to one data file .RData by
 ```
-Rscript merged-create.R
-```
-
-```
-Rscript merged-plot.R
+Rscript merged-create.R <path to folder containing .RData>
 ```
 
+Plot an merging MDSTN for multiple algorithms by
 ```
-Rscript merged-plot-gif.R
+Rscript merged-plot.R <path to folder containing .RData>
+```
+
+Plot an merging MDSTN for multiple algorithms by
+```
+Rscript merged-plot-gif.R <path to folder containing .RData>
 ```
 
 ## Acknowledge
