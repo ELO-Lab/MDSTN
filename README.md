@@ -68,10 +68,12 @@ Rscript src/mdstn/merged-plot-gif.R <path to merged file .RData>
 ```
 Example: `Rscript src/mdstn/merged-plot-gif.R cec2013/p1-stn-merged.RData 1.0`
 
-## Acknowledge
+## Acknowledgement
 
-[benchmark](https://github.com/mikeagn/CEC2013)
 
-[meas](https://github.com/scmaree/HillVallEA)
+- [meas](https://github.com/scmaree/HillVallEA)
+- [stn](https://github.com/gabro8a/STNs)
 
-[stn](https://github.com/gabro8a/STNs)
+
+Our source code is inspired by:
+- [benchmark](https://github.com/mikeagn/CEC2013)
