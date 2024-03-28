@@ -51,7 +51,7 @@ Rscript src/mdstn/alg-plot.R <path to folder containing .RData> <scale factor>
 ```
 
 ### Merge
-Combine to one data file `.RData` by
+Combine to a merged data file `.RData` by
 ```
 Rscript src/mdstn/merged-create.R <path to folder containing .RData>
 ```
