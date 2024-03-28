@@ -70,4 +70,4 @@ Example: `Rscript src/mdstn/merged-plot-gif.R cec2013/p1-stn-merged.RData 1.0`
 
 ## Acknowledgement
 
-We would like to express our gratitude to the authors of [HillVallEA](https://github.com/scmaree/HillVallEA) and [CEC2013 Niching Benchmark](https://github.com/mikeagn/CEC2013) which are the baseline for us to implement new ideas; to the authors of [STN](https://github.com/gabro8a/STNs) for their graph modeling concepts.
+We would like to express our gratitude to the authors of [HillVallEA](https://github.com/scmaree/HillVallEA) and [CEC2013 Niching Benchmark](https://github.com/mikeagn/CEC2013) which are the baseline for us to implement our new ideas; to the authors of [STN](https://github.com/gabro8a/STNs) for their graph modeling concepts.
