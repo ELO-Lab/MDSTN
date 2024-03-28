@@ -21,7 +21,7 @@ results
 ```
 where,
 - `0_0` contains results obtained by using the algorithm `0_0`.
-- `p1` is the problem 1 in cec2013 niching benchmark.
+- `p1` is the problem 1 in the CEC2013 niching benchmark.
 - `run0` is a run when solving the problem 1.
 - `population00001_elites.dat` contains all potential solutions found by the algorithm in the iteration 1.
 
