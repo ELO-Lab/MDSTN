@@ -42,32 +42,34 @@ After extracting, multiple files `algo_prob_dims.txt` will be placed in the fold
 ### Single
 Convert to an appropriate extension `*.RData` by
 ```
-Rscript alg-create.R <path to folder containing .txt> <number of considered runs>
+Rscript src/mdstn/alg-create.R <path to folder containing .txt> <number of runs>
 ```
 
-Plot an MDSTN for a single algorithm by
+Plot an MDSTN for each algorithm by
 ```
-Rscript alg-plot.R <path to folder containing .RData> <scale factor>
+Rscript src/mdstn/alg-plot.R <path to folder containing .RData> <scale factor>
 ```
 
 ### Merge
-Combine to one data file .RData by
+Combine to one data file `.RData` by
 ```
-Rscript merged-create.R <path to folder containing .RData>
-```
-
-Plot an merging MDSTN for multiple algorithms by
-```
-Rscript merged-plot.R <path to folder containing .RData>
+Rscript src/mdstn/merged-create.R <path to folder containing .RData>
 ```
 
-Plot an dynamic merging MDSTN for multiple algorithms by
+Plot a merging MDSTN for multiple algorithms by
 ```
-Rscript merged-plot-gif.R <path to folder containing .RData>
+Rscript src/mdstn/merged-plot.R <path to merged file .RData>
+```
+
+Plot a dynamic merging MDSTN for multiple algorithms by
+```
+Rscript src/mdstn/merged-plot-gif.R <path to merged file .RData>
 ```
 
 ## Acknowledge
 
 [benchmark](https://github.com/mikeagn/CEC2013)
+
 [meas](https://github.com/scmaree/HillVallEA)
+
 [stn](https://github.com/gabro8a/STNs)
