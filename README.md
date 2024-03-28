@@ -44,27 +44,32 @@ Convert to an appropriate extension `*.RData` by
 ```
 Rscript src/mdstn/alg-create.R <path to folder containing .txt> <number of runs>
 ```
+Example: `Rscript src/mdstn/alg-create.R cec2013/p1 50`
 
 Plot an MDSTN for each algorithm by
 ```
 Rscript src/mdstn/alg-plot.R <path to folder containing .RData> <scale factor>
 ```
+Example: `Rscript src/mdstn/alg-plot.R cec2013/p1-stn 1.0`
 
 ### Merge
 Combine to a merged data file `.RData` by
 ```
 Rscript src/mdstn/merged-create.R <path to folder containing .RData>
 ```
+Example: `Rscript src/mdstn/merged-create.R cec2013/p1-stn`
 
 Plot a merging MDSTN for multiple algorithms by
 ```
-Rscript src/mdstn/merged-plot.R <path to merged file .RData>
+Rscript src/mdstn/merged-plot.R <path to merged file .RData> <scale factor>
 ```
+Example: `Rscript src/mdstn/merged-plot.R cec2013/p1-stn-merged.RData 1.0`
 
 Plot a dynamic merging MDSTN for multiple algorithms by
 ```
 Rscript src/mdstn/merged-plot-gif.R <path to merged file .RData>
 ```
+Example: `Rscript src/mdstn/merged-plot-gif.R cec2013/p1-stn-merged.RData 1.0`
 
 ## Acknowledge
 
