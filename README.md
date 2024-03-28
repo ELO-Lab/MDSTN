@@ -9,10 +9,7 @@ make
 ./run_experiments
 ```
 
-## Plot MDSTNs
-
-### Data
-The directory structure of results after performing experiments should be:
+After performing experiments of MEAs, the directory structure of results should be:
 ```
 results
 └─── 0_0
@@ -20,27 +17,27 @@ results
 │       └─── run0
 │           │    population00001_elites.dat
 │           │    ...
-└─── 0_1
-    └─── p1
+│ ...
 ```
 where,
-- `0_0` contains results of algorithm `0_0`.
-- `p_1` is the problem 1 in cec2013 benchmark.
-- `run0` is a run for solving the problem.
-- `population00001_elites.dat` contains potential solutions found by the algorithm in the iteration 1.
+- `0_0` contains results obtained by using the algorithm `0_0`.
+- `p1` is the problem 1 in cec2013 niching benchmark.
+- `run0` is a run when solving the problem 1.
+- `population00001_elites.dat` contains all potential solutions found by the algorithm in the iteration 1.
 
-Data for plotting MDSTN can be obtained by 
-```
-python src/mdstn/extract_data.py
-```
-There are two variables in file `extract_data.py` which should be noticed such as `algo` and `prob_ids`:
-- `algo` is a dictionary whose keys are name of folder containing results of an algorithm and values are its name.
+## Plot MDSTNs
+
+### Data
+`results` contains only raw data which must be extracted to drawable data via `src/mdstn/extract_data.py`
+
+There are two variables in this file `extract_data.py` which should be noticed such as `algo` and `prob_ids`:
+- `algo` is a dictionary whose key is name of folder containing results of an algorithm and value is the algorithm's name.
 - `prob_ids` is a list of indices of problems solved by the algorithm.
 
-After extracting, multiple files `algo_prob_dims.txt` will be placed in the folder `cec2013`.
+After making the necessary adjustment, the user takes command `python src/mdstn/extract_data.py` and obtains the `cec2013` folder contains multiple files `algo_prob_dims.txt`.
 
 ### Single
-- Convert to an appropriate extension `*.RData` by
+- Convert `algo_prob_dims.txt` to an appropriate extension `algo_prob_dims.RData` by
 ```
 Rscript src/mdstn/alg-create.R <path to folder containing .txt> <number of runs>
 ```
